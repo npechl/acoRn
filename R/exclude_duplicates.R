@@ -7,7 +7,9 @@
 #' @return a data.frame
 #' @export
 #'
-#' @examples
+#' @importFrom stringr str_squish str_detect str_order
+#' @importFrom utils head
+#'
 
 exclude_duplicates <- function(parents, adults = NULL, progeny = NULL) {
 

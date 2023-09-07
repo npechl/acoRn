@@ -6,7 +6,9 @@
 #' @return a data.frame
 #' @export
 #'
-#' @examples
+#' @importFrom data.table data.table rbindlist
+#' @importFrom stringr str_split
+#'
 find_parents <- function(adults, progeny) {
 
 
