@@ -19,21 +19,21 @@ find_parents <- function(adults, progeny) {
     nlociadu = ( ncol(adults) - 1 ) / 2
     nlocipro = ( ncol(progeny) - 1 ) / 2
 
-    cat(
-        paste0(
-            "Genotypes of adult individuals:\t",   nindadu, "\n",
-            "Genotypes of progeny individuals:\t", nindpro, "\n",
-            "Loci of adult individuals:\t",        nlociadu, "\n",
-            "Loci of progeny individuals:\t",      nlocipro
-        ),
+    # cat(
+    #     paste0(
+    #         "Genotypes of adult individuals:\t",   nindadu, "\n",
+    #         "Genotypes of progeny individuals:\t", nindpro, "\n",
+    #         "Loci of adult individuals:\t",        nlociadu, "\n",
+    #         "Loci of progeny individuals:\t",      nlocipro
+    #     ),
+    #
+    #     file = "info.txt"
+    # )
 
-        file = "info.txt"
-    )
-
-    message( c("Genotypes of adult individuals...\t",   nindadu) )
-    message( c("Genotypes of progeny individuals...\t", nindpro) )
-    message( c("Loci of adult individuals...\t",        nlociadu) )
-    message( c("Loci of progeny individuals...\t",      nlocipro) )
+    # message( c("Genotypes of adult individuals...\t",   nindadu) )
+    # message( c("Genotypes of progeny individuals...\t", nindpro) )
+    # message( c("Loci of adult individuals...\t",        nlociadu) )
+    # message( c("Loci of progeny individuals...\t",      nlocipro) )
 
     adults = adults |>
         melt(

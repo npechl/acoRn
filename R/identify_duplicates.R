@@ -15,9 +15,9 @@ identify_duplicates <- function(genotypes, abbr = NULL) {
     nloci    = ( ncol(genotypes) - 1 ) / 2
     nalleles = ncol(genotypes) - 1
 
-    message( c("\t...identify duplicates...\tnumber of individuals:\t", nind) )
-    message( c("\t...identify duplicates...\tumber of loci:\t",         nloci) )
-    message( c("\t...identify duplicates...\tumber of alleles:\t",      nalleles) )
+    # message( c("\t...identify duplicates...\tnumber of individuals:\t", nind) )
+    # message( c("\t...identify duplicates...\tumber of loci:\t",         nloci) )
+    # message( c("\t...identify duplicates...\tumber of alleles:\t",      nalleles) )
 
 
     genotypes = genotypes[, 2:ncol(genotypes)] |>

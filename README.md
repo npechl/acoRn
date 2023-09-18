@@ -13,6 +13,7 @@ You can install the development version of acoRn like so:
 ``` r
 # install.packages("remotes")
 library(remotes)
+
 install_github("npechl/acoRn")
 ```
 
