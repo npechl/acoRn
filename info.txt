@@ -1,4 +1,0 @@
-Genotypes of adult individuals:	59
-Genotypes of progeny individuals:	130
-Loci of adult individuals:	17
-Loci of progeny individuals:	17
