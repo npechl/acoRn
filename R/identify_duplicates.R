@@ -1,4 +1,4 @@
-#' Idntify duplicates in genotypes (i.e. parents or progenies)
+#' Identify duplicates in genotypes (i.e. parents or progenies)
 #'
 #' @param genotypes a data.frame with the genotypes
 #' @param abbr a string with abbreviation to use

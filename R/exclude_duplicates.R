@@ -7,7 +7,13 @@
 #' @return a data.frame
 #' @export
 #'
-#' @importFrom stringr str_squish str_detect str_order
+#' @importFrom stringr str_squish
+#' @importFrom stringr str_detect
+#' @importFrom stringr str_order
+#'
+#' @importFrom data.table :=
+#' @importFrom data.table .SD
+#'
 #' @importFrom utils head
 #'
 

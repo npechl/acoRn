@@ -5,22 +5,24 @@
 
 #' Title
 #'
-#' @param nmarkers
-#' @param ntrees
-#' @param nvariants
-#' @param maf
+#' @param nmarkers number of markers
+#' @param ntrees number of trees
+#' @param nvariants number of trees
+#' @param maf minimum allele frequency
 #'
 #' @importFrom stringi stri_rand_strings
+#'
 #' @importFrom data.table data.table
+#' @importFrom data.table dcast
+#'
 #' @importFrom stringr str_to_upper
 #' @importFrom stringr str_split_i
 #' @importFrom stringr str_sort
 #'
 #'
-#' @return
+#' @return a list
 #' @export
 #'
-#' @examples
 create_mock_parents <- function(nmarkers = 10, ntrees = 100, nvariants = 4, maf = NULL) {
 
 

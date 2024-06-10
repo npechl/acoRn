@@ -2,7 +2,7 @@
 % Please edit documentation in R/identify_duplicates.R
 \name{identify_duplicates}
 \alias{identify_duplicates}
-\title{Idntify duplicates in genotypes (i.e. parents or progenies)}
+\title{Identify duplicates in genotypes (i.e. parents or progenies)}
 \usage{
 identify_duplicates(genotypes, abbr = NULL)
 }
@@ -15,5 +15,5 @@ identify_duplicates(genotypes, abbr = NULL)
 a data.frame
 }
 \description{
-Idntify duplicates in genotypes (i.e. parents or progenies)
+Identify duplicates in genotypes (i.e. parents or progenies)
 }
