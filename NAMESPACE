@@ -2,6 +2,7 @@
 
 export(acoRn)
 export(create_mock_parents)
+export(create_mock_progeny)
 export(exclude_duplicates)
 export(find_parents)
 export(identify_duplicates)
