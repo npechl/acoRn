@@ -10,10 +10,9 @@ The goal of acoRn is to ...
 
 You can install the development version of acoRn like so:
 
-``` r
+```R
 # install.packages("remotes")
 library(remotes)
-
 install_github("npechl/acoRn")
 ```
 
