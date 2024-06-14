@@ -57,3 +57,5 @@ exclude_duplicates <- function(parents, adults = NULL, progeny = NULL) {
 
     return(parents)
 }
+
+globalVariables(c("Grouping", "newName"))

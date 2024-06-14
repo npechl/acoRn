@@ -59,3 +59,5 @@ identify_duplicates <- function(genotypes, abbr = NULL) {
     return(dupl)
 
 }
+
+globalVariables(c("Sample.a", "Sample.b"))

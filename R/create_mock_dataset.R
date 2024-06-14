@@ -170,5 +170,5 @@ create_mock_progeny <- function(info, fparents, mparents, prog) {
 }
 
 
-
+globalVariables(c(".", "tree_id", "marker_family", "variant"))
 

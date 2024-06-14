@@ -105,3 +105,5 @@ find_parents <- function(adults, progeny) {
     return(out)
 
 }
+
+globalVariables(c("Sample", "locus", "value", "N"))
