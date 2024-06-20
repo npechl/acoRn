@@ -38,6 +38,9 @@ find_parents <- function(adults, progeny) {
     # message( c("Loci of adult individuals...\t",        nlociadu) )
     # message( c("Loci of progeny individuals...\t",      nlocipro) )
 
+    colnames(adults)[1] = "Sample"
+    colnames(progeny)[1] = "Sample"
+
     adults = adults |>
         melt(
             id.vars = "Sample",
@@ -79,7 +82,7 @@ find_parents <- function(adults, progeny) {
 
         x = lapply(progeny[[ i ]], function(y) {
 
-            index = adults[[ unique(y$locus) ]]$value %in% y$value |> which()
+            index = (adults[[ unique(y$locus) ]]$value %in% y$value )|> which()
 
             return(
                 list(
@@ -94,8 +97,7 @@ find_parents <- function(adults, progeny) {
         x = x[which(N == nlociadu)]
 
         out[[ i ]] = data.table(
-            "Parents"        = paste(x$Sample, collapse = ", ")
-            # "No. of parents" = length(x$Sample)
+            "Parents" = paste(x$Sample |> str_sort(numeric = TRUE), collapse = ", ")
         )
     }
 

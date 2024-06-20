@@ -25,7 +25,7 @@ identify_duplicates <- function(genotypes, abbr = NULL) {
         as.matrix()
 
 
-    genotypes[genotypes == 999] = NA
+    # genotypes[genotypes == 999] = NA
 
 
     dupl = genotypes |>

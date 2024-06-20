@@ -1,51 +1,32 @@
-#' Adult trees
+
+
+#' Tree parents data set
 #'
-#' A subset of data from the World Health Organization Global Tuberculosis
-#' Report ...
+#' An example of tree parents data set
 #'
-#' @format ## `adults`
-#'
-#' A data frame with 59 rows and 35 columns:
+#' @format ## `parents`
+#' A data frame with 7,240 rows and 60 columns:
 #' \describe{
-#'   \item{Sample}{Pie215}
+#'   \item{country}{Country name}
 #'   \item{iso2, iso3}{2 & 3 letter ISO country codes}
 #'   \item{year}{Year}
 #'   ...
 #' }
-#'
-"adults"
+#' @source <https://www.who.int/teams/global-tuberculosis-programme/data>
+"parents"
 
-#' Adult trees
+
+#' Tree progeny data set
 #'
-#' A subset of data from the World Health Organization Global Tuberculosis
-#' Report ...
+#' An example of tree progeny data set
 #'
-#' @format ## `adults_metadata`
-#'
-#' A data frame with 59 rows and 35 columns:
+#' @format ## `parents`
+#' A data frame with 7,240 rows and 60 columns:
 #' \describe{
-#'   \item{Sample}{Pie215}
+#'   \item{country}{Country name}
 #'   \item{iso2, iso3}{2 & 3 letter ISO country codes}
 #'   \item{year}{Year}
 #'   ...
 #' }
-#'
-"adults_metadata"
-
-
-#' Adult trees
-#'
-#' A subset of data from the World Health Organization Global Tuberculosis
-#' Report ...
-#'
-#' @format ## `progeny`
-#'
-#' A data frame with 59 rows and 35 columns:
-#' \describe{
-#'   \item{Sample}{Pie215}
-#'   \item{iso2, iso3}{2 & 3 letter ISO country codes}
-#'   \item{year}{Year}
-#'   ...
-#' }
-#'
+#' @source <https://www.who.int/teams/global-tuberculosis-programme/data>
 "progeny"
