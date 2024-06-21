@@ -23,13 +23,13 @@ acoRn <- function(adults, progeny) {
 
     # identifying duplicates ---------------------------
 
-    # message("Adults duplicates...\t", appendLF = FALSE)
-    # adults_dupl <- identify_duplicates(adults, abbr = "Ad. ")
-    # message("OK")
-    #
-    # message("Progeny duplicates...\t", appendLF = FALSE)
-    # progeny_dupl <- identify_duplicates(progeny, abbr = "Pro. ")
-    # message("OK")
+    message("Adults duplicates...\t", appendLF = FALSE)
+    adults_dupl <- identify_duplicates(adults, abbr = "Ad. ")
+    message("OK")
+
+    message("Progeny duplicates...\t", appendLF = FALSE)
+    progeny_dupl <- identify_duplicates(progeny, abbr = "Pro. ")
+    message("OK")
 
     # find parents ------------------------------
 
@@ -39,9 +39,9 @@ acoRn <- function(adults, progeny) {
 
     # report duplicates ------------------------------
 
-    # message("Report duplicates...\t", appendLF = FALSE)
-    # out <- exclude_duplicates(out, adults_dupl, progeny_dupl)
-    # message("OK")
+    message("Report duplicates...\t", appendLF = FALSE)
+    out <- exclude_duplicates(out, adults_dupl, progeny_dupl)
+    message("OK")
 
     message("done!")
 

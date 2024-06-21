@@ -4,11 +4,11 @@
 
 <!-- badges: end -->
 
-The goal of acoRn is to ...
+**`acoRn`** an open-source R package designed for exclusion-based parentage assignment. Utilizing the principles of Mendelian segregation, `acoRn` analyzes multilocus genotype data from potential parents and offspring to identify likely parentage relationships, while accommodating genotyping errors, missing data, and duplicate genotypes.
 
 ## Installation
 
-You can install the development version of acoRn like so:
+`acoRn` can be easily installed through GitHub as follows:
 
 ```R
 # install.packages("remotes")
@@ -16,11 +16,15 @@ library(remotes)
 install_github("npechl/acoRn")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+## Usage
 
 ``` r
 library(acoRn)
-## basic example code
+
+data("parents")
+data("offspring")
+
+r = acoRn(parents, offspring)
+
+head(r)
 ```

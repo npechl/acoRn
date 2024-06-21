@@ -21,16 +21,16 @@ exclude_duplicates <- function(parents, adults = NULL, progeny = NULL) {
 
     if(!is.null(adults)) {
 
-        adults = adults[, by = Grouping, newName := head(.SD, 1)[["Sample"]]]
+        # adults = adults[, by = Grouping, newName := head(.SD, 1)[["Sample"]]]
 
         parents$`Parents (no duplicates)` = parents$Parents |>
-            str_split(",") |>
+            str_split("\\,") |>
             lapply(str_squish) |>
             lapply(function(x) {
 
                 index = match(x, adults$Sample)
 
-                ifelse(is.na(index), "", adults[index][["newName"]])
+                ifelse(is.na(index), "", adults[index][["Sample"]])
 
             }) |>
 
@@ -39,7 +39,7 @@ exclude_duplicates <- function(parents, adults = NULL, progeny = NULL) {
             unlist()
 
         parents$`No. of parents` = parents$`Parents (no duplicates)` |>
-            str_split(",") |>
+            str_split("\\,") |>
             lapply(str_squish) |>
             lapply(str_detect, "Ad") |>
             lapply(sum) |>
@@ -58,4 +58,4 @@ exclude_duplicates <- function(parents, adults = NULL, progeny = NULL) {
     return(parents)
 }
 
-globalVariables(c("Grouping", "newName"))
+globalVariables(c("Grouping", "Sample"))

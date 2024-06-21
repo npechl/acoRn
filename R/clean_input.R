@@ -18,6 +18,8 @@ clean_input <- function(genotypes) {
         lapply(function(q) {colnames(q) <- ncol(q) |> seq_len() |> as.character(); return(q) }) |>
         as.data.table()
 
+    colnames(o)[1] = "tree_id"
+
     return(o)
 
 
