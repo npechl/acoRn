@@ -30,7 +30,9 @@ exclude_duplicates <- function(parents, adults = NULL, progeny = NULL) {
 
                 index = match(x, adults$Sample)
 
-                ifelse(is.na(index), "", adults[index][["Sample"]])
+                out = ifelse(is.na(index), NA, adults[index][["Sample"]])
+
+                out[which(!is.na(out))]
 
             }) |>
 
