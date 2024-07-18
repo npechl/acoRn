@@ -18,24 +18,28 @@ install_github("npechl/acoRn")
 
 ## Usage
 
-## Synthetic genotype data generation
-
+### Synthetic genotype data generation
 ```R
+# load acoRn
 library(acoRn)
 
+# create mock parents dataset
 parents <- create_mock_parents()
 
+# create mock progeny dataset
 offspring <- create_mock_progeny(p[[1]], fparents = 5, mparents = 5, prog = 5)
 ```
 
-## Parental assignment
-
+### Parental assignment
 ```R
+# load acoRn
 library(acoRn)
 
+# example datasets
 data("parents")
 data("offspring")
 
+# run acoRn
 r <- acoRn(parents, offspring)
 
 head(r)
