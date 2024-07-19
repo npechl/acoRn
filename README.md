@@ -2,6 +2,8 @@
 
 <!-- badges: start -->
 
+<!-- [![R-CMD-check](https://github.com/tidyverse/ggplot2/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tidyverse/ggplot2/actions/workflows/R-CMD-check.yaml) -->
+
 <!-- badges: end -->
 
 **`acoRn`** an open-source R package designed for exclusion-based parentage assignment. Utilizing the principles of Mendelian segregation, `acoRn` analyzes multilocus genotype data from potential parents and offspring to identify likely parentage relationships, while accommodating genotyping errors, missing data, and duplicate genotypes.
