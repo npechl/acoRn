@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-<!-- [![R-CMD-check](https://github.com/tidyverse/ggplot2/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tidyverse/ggplot2/actions/workflows/R-CMD-check.yaml) -->
+[![R-CMD-check](https://github.com/npechl/acoRn/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/npechl/acoRn/actions/workflows/R-CMD-check.yaml)
 
 <!-- badges: end -->
 
