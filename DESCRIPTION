@@ -2,10 +2,10 @@ Package: acoRn
 Title: An R Package for Exclusion-Based Parentage Assignment Using Multilocus Genotype Data
 Version: 0.1.0
 Authors@R: c(
-    person("Nikos", "Pechlivanis", , "npechlv@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2502-612X")),
-    person("Fotis", "Psomopoulos", , "fpsom@certh.gr", role = c("aut"), comment = c(ORCID = "0000-0002-0222-4273")),
-    person("Aristotelis", "Papageorgiou", , "apapage@mbg.duth.gr", role = c("aut"))
-)
+        person("Nikos", "Pechlivanis", , "npechlv@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2502-612X")),
+        person("Fotis", "Psomopoulos", , "fpsom@certh.gr", role = c("aut"), comment = c(ORCID = "0000-0002-0222-4273")),
+        person("Aristotelis", "Papageorgiou", , "apapage@mbg.duth.gr", role = c("aut"))
+    )
 Description: acoRn is an open-source R package for exclusion-based parentage assignment, essential for studies in biodiversity conservation and breeding programs. The tool compares multilocus genotype data of potential parents and offspring, identifying likely parentage relationships while accounting for genotyping errors, missing data, and duplicate genotypes. acoRn includes two algorithms: one generates synthetic genotype data based on user-defined parameters, while the other analyzes existing genotype data to identify parentage patterns. The package is versatile, applicable to diverse organisms, and offers clear visual outputs, making it a valuable resource for researchers.
 License: MIT + file LICENSE
 Encoding: UTF-8
